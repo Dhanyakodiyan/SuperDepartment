@@ -1,1 +1,54 @@
+package superDepartment;
 
+import superDepartment.SuperDepartment;
+import superDepartment.AdminDepartment;
+import superDepartment.HrDepartment;
+import superDepartment.TechDepartment;
+
+
+
+public class DemoApplication {
+
+	public DemoApplication() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		HrDepartment hrDepartment = new HrDepartment();
+		TechDepartment techDepartment = new TechDepartment();
+		AdminDepartment adminDepartment = new AdminDepartment();
+
+		adminDepartment.departmentName();
+		System.out.println(adminDepartment.departmentName());
+		adminDepartment.getTodaysWork();
+		System.out.println(adminDepartment.getTodaysWork());
+		adminDepartment.getWorkDeadline();
+		System.out.println(adminDepartment.getWorkDeadline());
+		adminDepartment.isTodayAHoliday();
+		System.out.println(adminDepartment.isTodayAHoliday());
+
+		hrDepartment.departmentName();
+		System.out.println(hrDepartment.departmentName());
+		hrDepartment.getTodaysWork();
+		System.out.println(hrDepartment.getTodaysWork());
+		hrDepartment.doActivity();
+		System.out.println(hrDepartment.doActivity());
+		hrDepartment.getWorkDeadline();
+		System.out.println(hrDepartment.getWorkDeadline());
+		hrDepartment.isTodayAHoliday();
+		System.out.println(hrDepartment.isTodayAHoliday());
+		
+		techDepartment.departmentName();
+		System.out.println(techDepartment.departmentName());
+		techDepartment.getTodaysWork();
+		System.out.println(techDepartment.getTodaysWork());
+		techDepartment.getTechStackInformation();
+		System.out.println(techDepartment.getTechStackInformation());
+		techDepartment.getWorkDeadline();
+		System.out.println(techDepartment.getWorkDeadline());
+		techDepartment.isTodayAHoliday();
+		System.out.println(techDepartment.isTodayAHoliday());
+
+	}
+
+}
